@@ -1,6 +1,7 @@
 from mastodon import Mastodon
 import random
 from hora_meva import horameva
+from hora_tradicional import horatradicional
 
 # Set up Mastodon
 mastodon = Mastodon(
@@ -8,8 +9,13 @@ mastodon = Mastodon(
 	api_base_url = 'https://botsin.space/'
 )
 
-mostrahora = horameva()
+mostrameva = horameva()
+mostratrad = horatradicional()
 
 rand = random.randint(0,6)
 if rand == 3:
-	mastodon.status_post(mostrahora)
+	random_bit = random.getrandbits(1)
+	if random_bit == 1:
+		mastodon.status_post(mostratrad)
+	else:
+		mastodon.status_post(mostrameva)
