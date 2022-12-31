@@ -1,3 +1,5 @@
+# coding=UTF-8
+
 from mastodon import Mastodon
 import datetime
 import time
