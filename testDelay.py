@@ -35,4 +35,4 @@ mastodon.status_post("Disculpeu") #11
 time.sleep(1)
 mastodon.status_post("les") #12
 time.sleep(1)
-mastodon.status_post("molèsties " + any)
+mastodon.status_post("molèsties ")
