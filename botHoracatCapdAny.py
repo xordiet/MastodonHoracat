@@ -14,13 +14,13 @@ hora = now.hour
 minut = now.minute
 any = now.year
 
-if hora = 23 and minut = 57:
+if hora == 23 and minut == 57:
 	mastodon.status_post("Falten tres minuts per acabar l'any " + any + ", prepara el raïm.")
 
-if hora = 23 and minut = 59:
+if hora == 23 and minut == 59:
 	mastodon.status_post("Darrer minut de l'any " + any)
 
-if hora = 00 and minut = 00:
+if hora == 00 and minut == 00:
 	mastodon.status_post("Dong") #1
 	time.sleep(1)
 	mastodon.status_post("Dong") #2
