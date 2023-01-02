@@ -12,7 +12,7 @@ mastodon = Mastodon(
 mostrameva = horameva()
 mostratrad = horatradicional()
 
-rand = random.randint(0,6)
+rand = random.randint(0,10)
 if rand == 3:
 	random_bit = random.getrandbits(1)
 	if random_bit == 1:
